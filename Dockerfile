@@ -11,7 +11,7 @@ RUN npm install
 COPY entrypoint.sh ./entrypoint.sh
 RUN chmod +x ./entrypoint.sh
 
-EXPOSE 3000
+EXPOSE 8080
 
 ENTRYPOINT [ "/epicbook/entrypoint.sh" ]
 CMD ["node", "/epicbook/server.js"]
